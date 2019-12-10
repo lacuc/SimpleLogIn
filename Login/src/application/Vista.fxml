@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="595.0" prefWidth="589.0" styleClass="rootPane" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="">
+   <children>
+      <GridPane layoutX="33.0" layoutY="9.0" prefHeight="578.0" prefWidth="500.0" AnchorPane.leftAnchor="33.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="171.0" minWidth="0.0" prefWidth="49.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="390.0" minWidth="15.0" prefWidth="383.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="103.0" minWidth="10.0" prefWidth="60.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="214.0" minHeight="0.0" prefHeight="63.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="460.0" minHeight="10.0" prefHeight="437.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="165.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <VBox alignment="CENTER" prefHeight="314.0" prefWidth="390.0" style="-fx-background-color: ffffff; -fx-background-radius: 40;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/katana.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="LOGIN" textFill="#220e0e">
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arimo Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField prefHeight="30.0" prefWidth="390.0" promptText="Usuario">
+                     <padding>
+                        <Insets top="40.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="40.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXPasswordField prefHeight="43.0" prefWidth="386.0" promptText="Contraseña">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXPasswordField>
+                  <Button mnemonicParsing="false" style="-fx-background-radius: 10; -fx-background-color: ff2b1f;" text="Button">
+                     <VBox.margin>
+                        <Insets bottom="30.0" top="30.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
